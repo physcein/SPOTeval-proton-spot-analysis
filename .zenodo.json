@@ -1,0 +1,22 @@
+{
+  "title": "SPOTeval",
+  "description": "MATLAB software for proton pencil-beam spot profile analysis, two-dimensional spot-shape characterization, and TPS-compatible W2CAD export.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Lee, Tae Kyu",
+      "affiliation": "Indiana University Health Arnett",
+      "orcid": "0000-0003-0218-4942"
+    }
+  ],
+  "keywords": [
+    "proton therapy",
+    "pencil beam scanning",
+    "medical physics",
+    "spot profile analysis",
+    "W2CAD",
+    "MATLAB"
+  ],
+  "license": "MIT",
+  "access_right": "open"
+}
