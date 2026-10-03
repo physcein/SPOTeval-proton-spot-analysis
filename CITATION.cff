@@ -5,8 +5,8 @@ type: software
 authors:
   - family-names: "Lee"
     given-names: "Tae Kyu"
-    affiliation: "YOUR INSTITUTION"
-    orcid: "https://orcid.org/YOUR-ORCID"
+    affiliation: "Indiana University Health Arnett"
+    orcid: "https://orcid.org/0000-0003-0218-4942"
 version: "v1.0.0"
 date-released: 2026-07-13
 abstract: "MATLAB software for proton pencil-beam spot profile analysis, two-dimensional spot-shape characterization, and TPS-compatible W2CAD export."
