@@ -1,7 +1,7 @@
 % Program Name: Proton Spot Profile Evaluation (SPOTeval) Tool
 % Author: Tae Kyu Lee, Ph.D.
 %
-% This code was written in Matlab version R2012b.
+% This code was written in Matlab version R2021b.
 % This matlab code utilizes the measurements from Film or
 % Optical Dosimeter System (ODS) developed by Wen Hsi, Ph.D., and analyzes with
 % FWHM, Sigma, Penumbra, Symmetry, spot angle deviation, and gamma index.
@@ -14,7 +14,7 @@ clc;
 % Define properties and set default values.
 prop.filterspec = '*.CR2';
 prop.refilter = '';
-prop.prompt = 'Spot Profile Evaluator (SPOTeval) V.1.6.1 - Format: E000Z000NETS000 in MeV, cm & mm';
+prop.prompt = 'Spot Profile Evaluator (SPOTeval) V.1.6.2 - Format: E000Z000NETS000 in MeV, cm & mm';
 prop.output = 'cell';
 prop.numfiles = [];
 
@@ -1038,27 +1038,27 @@ scay=zeros(1,1);
             fst1=strrep(fst,'_','.');
             Energy=str2num(fst1(1,R1+1:M1-1));
             ZPOS=str2num(fst1(1,M1+1:F1-1));
-            NET=str2num(fst1(1,F1+3:SP-1))/1;
+            NET=str2num(fst1(1,F1+3:SP-1))/100;
         elseif strfind(fst,'I')
             fst1=strrep(fst,'I','0');
             Energy=str2num(fst1(1,R1+1:M1-1));
             ZPOS=str2num(fst1(1,M1+1:F1-1));
-            NET=str2num(fst1(1,F1+3:SP-1))/1;
+            NET=str2num(fst1(1,F1+3:SP-1))/100;
         elseif strfind(fst,'U')
             fst1=strrep(fst,'U','+');
             Energy=str2num(fst1(1,R1+1:M1-1));
             ZPOS=str2num(fst1(1,M1+1:F1-1));
-            NET=str2num(fst1(1,F1+3:SP-1))/1;
+            NET=str2num(fst1(1,F1+3:SP-1))/100;
         elseif strfind(fst,'D')
             fst1=strrep(fst,'D','-');
             Energy=str2num(fst1(1,R1+1:M1-1));
             ZPOS=str2num(fst1(1,M1+1:F1-1));
-            NET=str2num(fst1(1,F1+3:SP-1))/1;            
+            NET=str2num(fst1(1,F1+3:SP-1))/100;            
         else
             fst1=fst;
             Energy=str2num(fst1(1,R1+1:M1-1));
             ZPOS=str2num(fst1(1,M1+1:F1-1));
-            NET=str2num(fst1(1,F1+3:F1+6))/1;
+            NET=str2num(fst1(1,F1+3:F1+6))/100;
         end
 %         Energy
 %         ZPOS
