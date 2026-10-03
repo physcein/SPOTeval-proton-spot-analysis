@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "SPOTeval"
+message: "If you use this software, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "Lee"
+    given-names: "Tae Kyu"
+    affiliation: "YOUR INSTITUTION"
+    orcid: "https://orcid.org/YOUR-ORCID"
+version: "v1.0.0"
+date-released: 2026-07-13
+abstract: "MATLAB software for proton pencil-beam spot profile analysis, two-dimensional spot-shape characterization, and TPS-compatible W2CAD export."
+keywords:
+  - proton therapy
+  - pencil beam scanning
+  - medical physics
+  - spot profile analysis
+  - W2CAD
+  - MATLAB
+license: "MIT"
+repository-code: "https://github.com/YOUR-USERNAME/SPOTeval"
+url: "https://github.com/YOUR-USERNAME/SPOTeval"
